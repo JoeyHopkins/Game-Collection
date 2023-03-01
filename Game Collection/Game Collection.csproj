@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C39BB4C-9733-4B12-B05A-F44DA6AE51F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game_Collection</RootNamespace>
+    <AssemblyName>Game Collection</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BadGuyG1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BallG2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormCertainQuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCertainQuit.Designer.cs">
+      <DependentUpon>FormCertainQuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinalWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinalWin.Designer.cs">
+      <DependentUpon>FormFinalWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameOne.Designer.cs">
+      <DependentUpon>FormGameOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameThree.Designer.cs">
+      <DependentUpon>FormGameThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameTwo.Designer.cs">
+      <DependentUpon>FormGameTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPauseMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPauseMenu.Designer.cs">
+      <DependentUpon>FormPauseMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYouLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYouLose.Designer.cs">
+      <DependentUpon>FormYouLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYouWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYouWin.Designer.cs">
+      <DependentUpon>FormYouWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerG1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCertainQuit.resx">
+      <DependentUpon>FormCertainQuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinalWin.resx">
+      <DependentUpon>FormFinalWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameOne.resx">
+      <DependentUpon>FormGameOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameThree.resx">
+      <DependentUpon>FormGameThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameTwo.resx">
+      <DependentUpon>FormGameTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPauseMenu.resx">
+      <DependentUpon>FormPauseMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYouLose.resx">
+      <DependentUpon>FormYouLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYouWin.resx">
+      <DependentUpon>FormYouWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
